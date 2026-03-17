@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ordem Paranormal</title>
+
+<!-- Conecta o CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+CABEÇALHO DO SITE
+========================= -->
+<header>
+
+<h1>Ordem Paranormal</h1>
+
+<!-- Banner Rotativo -->
+<div class="banner">
+<img id="banner-img" src="https://pbs.twimg.com/media/F6VHPNJbQAAialV.jpg">
+<div class="banner-text" id="banner-text">mundo paranormal</div>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+SEÇÃO PRINCIPAL - CARDS
+========================= -->
+
+<section class="cards">
+
+<div class="card">
+<h2>Investigação</h2>
+<th> uma mecânica estruturada em cenas, focada em encontrar pistas (básicas e complementares) usando perícias e testes para desvendar mistérios do Outro Lado..</th>
+</div>
+
+<div class="card">
+<h2>Rituais</h2>
+<th>são habilidades ocultistas que manipulam o "Outro Lado" para causar efeitos sobrenaturais, servindo para combate ou utilidade, geralmente custando Pontos de Esforço (PE) e Sanidade.</th>
+</div>
+
+<div class="card">
+<h2>Criaturas</h2>
+<th>são entidades sobrenaturais originadas do "Outro Lado", um plano oculto que invade a realidade quando a membrana que separa os mundos enfraquece devido ao medo humano.</th>
+</div>
+
+<div class="card">
+<h2>Ordem</h2>
+<th>é um universo de RPG de mesa e investigação criado por Rafael Lange (Cellbit), focado em ocultismo e terror sobrenatural. </th>
+</div>
+
+</section>
+
+
+<!-- =========================
+TABELA
+========================= -->
+
+<section class="tabela">
+
+<h2>Elementos Paranormais</h2>
+
+<table>
+
+<tr>
+<th>Explicação de cada elemento</th>
+<th>Efeitos</th>
+<th>Personagem</th>
+<th>Elenco</th>
+</tr>
+
+<tr>
+<td>Sangue representa emoções e violência.</td>
+<td>Aumenta força e agressividade.</td>
+<td>Arthur Cervero</td>
+<td>Guaxinim</td>
+</tr>
+
+<tr>
+<td>Morte representa o tempo e decadência.</td>
+<td>Envelhecimento e destruição.</td>
+<td>Dante</td>
+<td>Rakin</td>
+</tr>
+
+<tr>
+<td>Conhecimento representa mente e lógica.</td>
+<td>Controle mental e inteligência.</td>
+<td>Veríssimo</td>
+<td>Cellbit</td>
+</tr>
+
+<tr>
+<td>Energia representa caos e instabilidade.</td>
+<td>Explosões e distorções.</td>
+<td>Kaiser</td>
+<td>Calango</td>
+</tr>
+
+<tr>
+<td>Medo representa o desconhecido.</td>
+<td>Enfraquece sanidade.</td>
+<td>Beatrice</td>
+<td>Bagi</td>
+</tr>
+
+<tr>
+<td>Elementos se conectam no paranormal.</td>
+<td>Afetam mente e realidade.</td>
+<td>Equipe Ordem</td>
+<td>Elenco RPG</td>
+</tr>
+
+</table>
+
+</section>
+
+
+<!-- =========================
+LINK EXTERNO
+========================= -->
+
+<section class="link">
+
+<a href="https://ordemparanormal.fandom.com/wiki/Ordem_Paranormal" target="_blank">
+Tudo sobre o mundo de Ordem Paranormal
+</a>
+
+</section>
+
+
+<!-- =========================
+RODAPÉ
+========================= -->
+
+<footer>
+
+<p>Nome: Ordem Paranormal</p>
+<p>Telefone: 6298543-9817</p>
+<p>Email: universoparanormal@gmail.com</p>
+
+</footer>
+
+
+<!-- =========================
+JAVASCRIPT DO BANNER
+========================= -->
+
+<script>
+
+/* Lista de imagens do banner */
+
+const imagens = [
+"https://i.pinimg.com/1200x/34/f3/1f/34f31f0874d9ba0ddac1d784459ca9a9.jpg",
+"https://i.pinimg.com/1200x/4d/0a/7d/4d0a7db0e51f07c18c58d4d3456dcd20.jpg",
+"https://i.pinimg.com/1200x/b4/2a/f0/b42af0eb2cf5d808f64723adfceaa123.jpg",
+"https://i.pinimg.com/1200x/96/02/fc/9602fc2f1be9afc8eec958ce7e176189.jpg",
+"https://i.pinimg.com/736x/a8/ef/7c/a8ef7c3ad0e5c4475714f69c2b795152.jpg"
+]
+
+/* Textos do banner */
+
+const textos = [
+"Elemento Sangue",
+"Elemento Morte",
+"Elemento Conhecimento",
+"Elemento Energia",
+"Elemento Medo"
+]
+
+let index = 0
+
+function trocarBanner(){
+
+index++
+
+if(index >= imagens.length){
+index = 0
+}
+
+document.getElementById("banner-img").src = imagens[index]
+document.getElementById("banner-text").innerText = textos[index]
+
+}
+
+/* troca automaticamente a cada 3 segundos */
+
+setInterval(trocarBanner,3000)
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja Ordem Paranormal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>ITENS DE ORDEM PARANORMAL</h1>
+<p>Produtos inspirados no universo paranormal</p>
+</header>
+
+<nav>
+<a href="#blusas">Blusas</a>
+<a href="#acessorios">Acessórios</a>
+<a href="#livros">Livros</a>
+<a href="#decoracao">Objetos Decorativos</a>
+</nav>
+
+<section id="blusas">
+<h2>Blusas</h2>
+
+<div class="produtos">
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/56/a7/d2/56a7d270895c5281bebcc835b53151a3.jpg">
+<h3>Blusa Símbolo Paranormal</h3>
+<p>R$ 89,90</p>
+<button onclick="comprar()">Comprar</button>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/45/35/1e/45351ed4c60b65810326978446d93303.jpg">
+<h3>Blusa Ordem</h3>
+<p>R$ 79,90</p>
+<button onclick="comprar()">Comprar</button>
+</div>
+
+</div>
+</section>
+
+
+<section id="acessorios">
+<h2>Acessórios</h2>
+
+<div class="produtos">
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/2e/b2/76/2eb27687099d69f081266f43bb5f2132.jpg">
+<h3>Colar Símbolo Oculto</h3>
+<p>R$ 39,90</p>
+<button onclick="comprar()">Comprar</button>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/e1/2b/49/e12b49b32c51d8e3817f5b9ec7c401f0.jpg">
+<h3>chaveiros</h3>
+<p>R$ 29,90</p>
+<button onclick="comprar()">Comprar</button>
+</div>
+
+</div>
+</section>
+
+
+<section id="livros">
+<h2>Livros</h2>
+
+<div class="produtos">
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/52/39/7f/52397fb6fb628636f16d981f5e9ba902.jpg">
+<h3>Livro Ordem Paranormal RPG</h3>
+<p>R$ 120,00</p>
+<button onclick="comprar()">Comprar</button>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/1200x/24/54/56/24545688f6700d6e4c22524d6b869ce6.jpg">
+<h3>jogo de mesa</h3>
+<p>R$ 95,00</p>
+<button onclick="comprar()">Comprar</button>
+</div>
+
+</div>
+</section>
+
+
+<section id="decoracao">
+<h2>Objetos Decorativos</h2>
+
+<div class="produtos">
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/fe/ec/57/feec5793642e621466ad2a868489968c.jpg">
+<h3> Símbolo Paranormal</h3>
+<p>R$ 59,90</p>
+<button onclick="comprar()">Comprar</button>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/49/45/ae/4945aea364e8969bc49ce6250c1c4096.jpg">
+<h3>máscara</h3>
+<p>R$ 99,90</p>
+<button onclick="comprar()">Comprar</button>
+</div>
+
+</div>
+</section>
+
+
+<footer>
+<p>Site temático inspirado em Ordem Paranormal</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
